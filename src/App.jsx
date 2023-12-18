@@ -35,7 +35,7 @@ function App() {
         </Link>
         {!isRegisterFormRoute && <SearchBox onSearch={handleSearch} />}
         <Link style={{ textDecoration: 'none' }} to="/Register-Form">
-          <Register />
+           {!isRegisterFormRoute && <Register />}
         </Link>
       </nav>
       <Routes>
